@@ -1,4 +1,4 @@
-# ***LABORATORIO 5 - MVC PRIMEFACES INTRODUCTION - 2021-1*** 
+# *LABORATORIO 5 - MVC PRIMEFACES INTRODUCTION - 2021-1*
 
 ## **Maria Camila Fetecua – Daniel Alejandro Mejia**
 
@@ -110,47 +110,41 @@ IMAGEN
 IMAGEN
 
 **10. Si todo funcionó correctamente, realice las siguientes pruebas:**
-
-	a.Abra la aplicación en un explorador. Realice algunas pruebas de aceptación con la 	aplicación.
+a.Abra la aplicación en un explorador. Realice algunas pruebas de aceptación con la aplicación.
 IMAGEN
 
-	b.Abra la aplicación en dos computadores diferentes. Si no dispone de uno, hágalo en dos 	navegadores diferentes (por ejemplo Chrome y Firefox; incluso se puede en un único 	navegador usando una ventana normal y una ventana de incógnito / privada). Haga cinco 	intentos en uno, y luego un intento en el otro. ¿Qué valor tiene cada uno?
+b.Abra la aplicación en dos computadores diferentes. Si no dispone de uno, hágalo en dos navegadores diferentes (por ejemplo Chrome y Firefox; incluso se puede en un único 	navegador usando una ventana normal y una ventana de incógnito / privada). Haga cinco intentos en uno, y luego un intento en el otro. ¿Qué valor tiene cada uno?
 
 IMAGEN
-	No son iguales, la varianza y la desviación cambian un poco en los últimos decimales
+No son iguales, la varianza y la desviación cambian un poco en los últimos decimales
 
-	c.Aborte el proceso de Tomcat-runner haciendo Ctrl+C en la consola, y modifique el 	código del backing-bean de manera que use la anotación @SessionScoped en lugar de 	@ApplicationScoped. Reinicie la aplicación y repita el ejercicio anterior.
+c.Aborte el proceso de Tomcat-runner haciendo Ctrl+C en la consola, y modifique el 	código del backing-bean de manera que use la anotación @SessionScoped en lugar de 	@ApplicationScoped. Reinicie la aplicación y repita el ejercicio anterior.
 
 IMAGEN
 
-	**•Dado la anterior, ¿Cuál es la diferencia entre los backing-beans de sesión y los de 	aplicación?**
+**•Dado la anterior, ¿Cuál es la diferencia entre los backing-beans de sesión y los de 	aplicación?**
 	Al ejecutar el de aplicación solo una instancia del bin va a existir en cambio de la de 	sesión se ejecuta una instancia por cada página. 
 
 	
-	d.Por medio de las herramientas de desarrollador del explorador (Usando la tecla "F12" 	en la mayoría de exploradores):
+d.Por medio de las herramientas de desarrollador del explorador (Usando la tecla "F12" 	en la mayoría de exploradores):
 	•Ubique el código HTML generado por el servidor.
 IMAGEN
-
 	•Busque el elemento oculto, que contiene el número generado aleatoriamente.
 IMAGEN
 	•En la sección de estilos, deshabilite el estilo que oculta el elemento para que sea visible.
 IMAGEN
 	•Observe el cambio en la página, cada vez que se realiza un cambio en el estilo.
 IMAGEN
-
-	•Revise qué otros estilos se pueden agregar a los diferentes elementos y qué efecto 	tienen en la visualización de la página.
+	•Revise qué otros estilos se pueden agregar a los diferentes elementos y qué efecto tienen en la visualización de la página.
 IMAGEN
-	•Actualice la página. Los cambios de estilos realizados desaparecen, pues se realizaron 	únicamente en la visualización, la respuesta del servidor sigue siendo la misma, ya que el 	contenido de los archivos allí almacenados no se ha modificado.
+	•Actualice la página. Los cambios de estilos realizados desaparecen, pues se realizaron únicamente en la visualización, la respuesta del servidor sigue siendo la misma, ya que el 	contenido de los archivos allí almacenados no se ha modificado.
 
 IMAGEN
-
 	•Revise qué otros cambios se pueden realizar y qué otra información se puede obtener 	de las herramientas de desarrollador.
 
 IMAGEN
-
-
-	Para facilitar los intentos del usuario, se agregará una lista de los últimos valores 	ingresados:
-	a.Agregue en el Backing-Bean, una propiedad que contenga una lista de valores 	ingresados por el usuario.
+Para facilitar los intentos del usuario, se agregará una lista de los últimos valores ingresados:
+	a.Agregue en el Backing-Bean, una propiedad que contenga una lista de valores ingresados por el usuario.
 	b.Cuando se reinicie la aplicación, limpie el contenido de la lista.
-	c.Busque cómo agregar una tabla a la página, cuyo contenido sea la lista de 	listas de 	números.
+	c.Busque cómo agregar una tabla a la página, cuyo contenido sea la lista de listas de números.
 IMAGEN
