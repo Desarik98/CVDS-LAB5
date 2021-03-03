@@ -1,22 +1,20 @@
-#LABORATORIO 5 - MVC PRIMEFACES INTRODUCTION - 2021-1#
+# ***LABORATORIO 5 - MVC PRIMEFACES INTRODUCTION - 2021-1*** 
 
-##**Maria Camila Fetecua – Daniel Alejandro Mejia**##
+## **Maria Camila Fetecua – Daniel Alejandro Mejia**
 
 
-##PARTE I. - JUGANDO A SER UN CLIENTE HTTP##
+## PARTE I. - JUGANDO A SER UN CLIENTE HTTP
+
 **1.Antes de que el servidor cierre la conexión por falta de comunicación:
-	•Revise la página 36 del RFC del protocolo HTTP, sobre cómo realizar una petición GET. Con esto, solicite al servidor el recurso ‘sssss/abc.html’, usando la versión 1.0 de HTTP.
+	•Revise la página 36 del RFC del protocolo HTTP, sobre cómo realizar una petición GET. Con esto, solicite al servidor el recurso ‘sssss/abc.html’, usando la versión 1.0 	  de HTTP.
 	•Asegúrese de presionar ENTER dos veces después de ingresar el comando.
-	•Revise el resultado obtenido. ¿Qué codigo de error sale?, revise el significado de este en la lista de códigos de estado HTTP.
-
-301 Movido Permanentemente:Esta y todas las solicitudes futuras deben dirigirse al URI proporcionado
+	•Revise el resultado obtenido. ¿Qué codigo de error sale?, revise el significado de este en la lista de códigos de estado HTTP.**
+	301 Movido Permanentemente:Esta y todas las solicitudes futuras deben dirigirse al URI proporcionado
 
 IMAGEN
-
-
-	•¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?
-	1xx informational response:Indica  que la solicitud fue recibida y comprendida. 		Se emite de forma provisional mientras continúa el procesamiento de la solicitud. Alerta al 	cliente para que espere una respuesta final. 
-	2xx success: Esta clase de códigos de estado indica que la acción solicitada por el 	cliente fue recibida, comprendida y aceptada
+	**•¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?**
+	1xx informational response:Indica  que la solicitud fue recibida y comprendida. Se emite de forma provisional mientras continúa el procesamiento de la solicitud. Alerta 	     al cliente para que espere una respuesta final. 
+	2xx success: Esta clase de códigos de estado indica que la acción solicitada por el cliente fue recibida, comprendida y aceptada
 	4xx client errors: La solicitud contiene sintaxis incorrecta o no puede procesarse.
 	5xx server errors: El servidor no completor una solicitud aparentemente válida.
 
@@ -27,13 +25,12 @@ IMAGEN
 **3.Seleccione el contenido HTML de la respuesta y copielo al cortapapeles CTRL-SHIFT-C. Ejecute el comando wc (word count) para contar palabras con la opción -c para contar el número de caracteres:wc -c 
 Pegue el contenido del portapapeles con CTRL-SHIFT-V y presione CTRL-D (fin de archivo de Linux). Si no termina el comando wc presione CTRL-D de nuevo. No presione mas de dos veces CTRL-D indica que se termino la entrada y puede cerrarle la terminal. 
 Debe salir el resultado de la cantidad de caracteres que tiene el contenido HTML que respondió el servidor.**
- 
 **Claro está, las peticiones GET son insuficientes en muchos casos. Investigue: **
-**¿Cuál es la diferencia entre los verbos GET y POST?**
 
+**¿Cuál es la diferencia entre los verbos GET y POST?**
 La diferencia es que GET lleva los datos de forma "visible" al cliente (navegador web). Y su medio de envío es la URL. En cambio, en POST lleva los datos de forma "ocultos" y son enviados por un formulario cuyo método de envío es post. 
 
-** ¿Qué otros tipos de peticiones existen?**
+**¿Qué otros tipos de peticiones existen?**
 
 •Método HEAD: Este método realiza una acción similar al método GET solo que a diferencia de este HEAD solo solicita los metadatos de un recurso o archivo y no todo elemento como tal.
 •Método OPTIONS:Sirve para averiguar qué métodos HTTP soporta el servidor web con respecto a un recurso en concreto o en caso de que haya un * en la URI se devuelven todos los métodos soportados por el servidor.
@@ -45,7 +42,7 @@ curl www.httpbin.org
 
 IMAGEN 
 
-Utilice ahora el parámetro -v y con el parámetro -i:
+**Utilice ahora el parámetro -v y con el parámetro -i:**
 curl -v www.httpbin.orgcurl -i www.httpbin.org
 
 IMANGEN
@@ -54,7 +51,8 @@ IMAGEN
 **¿Cuáles son las diferencias con los diferentes parámetros?**
 El parametro -i significa include, esto quiere decir que solo incluirá la información de cabecera que guarda la página web. En cambio, -v significa verbose, esto quiere decir que nos dará toda la información que guarda la página más peticiones que se estén haciendo.
 
-##PARTE II. - HACIENDO UNA APLICACIÓN WEB DINÁMICA A BAJO NIVEL.##
+
+## PARTE II. - HACIENDO UNA APLICACIÓN WEB DINÁMICA A BAJO NIVEL.
 
 **1.Para esto, cree un proyecto maven nuevo usando el arquetipo de aplicación Web estándar maven-archetype-webapp y realice lo siguiente**
 
@@ -83,7 +81,7 @@ IMAGEN
 IMAGEN
 
 
-##PARTE III##
+## PARTE III
 
 **18.En la página anterior, cree un formulario que tenga un campo para ingresar un número (si no ha manejado html antes, revise http://www.w3schools.com/html/ ) y un botón. El formulario debe usar como método ‘POST’, y como acción, la ruta relativa del último servlet creado (es decir la URL pero excluyendo ‘http://localhost:8080/’).**
 
@@ -97,19 +95,17 @@ Se observa que en el método POST simplemente sale el path sin ningún tipo de v
 
 
 **21. ¿Qué se está viendo? Revise cómo están implementados los métodos de la clase Service.java para entender el funcionamiento interno.**
-
-
 Al principio se crea un formulario en la dirección localhost:8080/ y con el action que se ejecuta al accionar el botón, nos lleva al path /todos y al asignarle el valor id al input este valor lo coge como id y acciona el servlet que se esta ejecutando en /todos
 
 
-##PARTE IV. - FRAMEWORKS WEB MVC – JAVA SERVER FACES / PRIME FACES##
-
+## PARTE IV. - FRAMEWORKS WEB MVC – JAVA SERVER FACES / PRIME FACES##
 
 Escriba una aplicación web que utilice PrimeFaces para calcular la media, la moda, la desviación estándar y varianza de un conjunto de N números reales. Este conjunto de N números reales deben ser ingresados por el usuario de manera que puedan ser utilizados para los cálculos.
 
 **1.Al proyecto Maven, debe agregarle las dependencias mas recientes de javax.javaee-api, com.sun.faces.jsf-api, com.sun.faces.jsf-impl, javax.servlet.jstl y Primefaces (en el archivo pom.xml).**
 
 IMAGEN
+
 **5.Cree una página XHTML, de nombre calculadora.xhtml (debe quedar en la ruta src/main/webapp). Revise en la página 13 del manual de PrimeFaces, qué espacios de nombres XML requiere una página de PrimeFaces y cuál es la estructura básica de la misma.**
 IMAGEN
 
