@@ -26,6 +26,10 @@
 **3.Seleccione el contenido HTML de la respuesta y copielo al cortapapeles CTRL-SHIFT-C. Ejecute el comando wc (word count) para contar palabras con la opción -c para contar el número de caracteres:wc -c 
 Pegue el contenido del portapapeles con CTRL-SHIFT-V y presione CTRL-D (fin de archivo de Linux). Si no termina el comando wc presione CTRL-D de nuevo. No presione mas de dos veces CTRL-D indica que se termino la entrada y puede cerrarle la terminal. 
 Debe salir el resultado de la cantidad de caracteres que tiene el contenido HTML que respondió el servidor.**
+
+
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen3.png)
+
 **Claro está, las peticiones GET son insuficientes en muchos casos. Investigue: **
 
 **¿Cuál es la diferencia entre los verbos GET y POST?**
@@ -41,13 +45,15 @@ La diferencia es que GET lleva los datos de forma "visible" al cliente (navegado
 **4.En la práctica no se utiliza telnet para hacer peticiones a sitios web sino el comando curl con ayuda de la linea de comandos:**
 curl www.httpbin.org
 
-IMAGEN 
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen4.png) 
 
 **Utilice ahora el parámetro -v y con el parámetro -i:**
 curl -v www.httpbin.orgcurl -i www.httpbin.org
 
-IMANGEN
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen5.png)
+
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen6.png)
+
 
 **¿Cuáles son las diferencias con los diferentes parámetros?**
 El parametro -i significa include, esto quiere decir que solo incluirá la información de cabecera que guarda la página web. En cambio, -v significa verbose, esto quiere decir que nos dará toda la información que guarda la página más peticiones que se estén haciendo.
@@ -57,7 +63,7 @@ El parametro -i significa include, esto quiere decir que solo incluirá la infor
 
 **1.Para esto, cree un proyecto maven nuevo usando el arquetipo de aplicación Web estándar maven-archetype-webapp y realice lo siguiente**
 
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen7.png)
 
 **Revise qué valor tiene el parámetro ‘urlPatterns’ de la anotación @WebServlet, pues este indica qué URLs atiende las peticiones el servlet.**
 Contene Pats que son identificados por la URL 
@@ -67,30 +73,35 @@ Puerto 8080
 
 **5. Abra un navegador, y en la barra de direcciones ponga la URL con la cual se le enviarán peticiones al ‘SampleServlet’. Tenga en cuenta que la URL tendrá como host ‘localhost’, como puerto, el configurado en el pom.xml y el path debe ser el del Servlet. Debería obtener un mensaje de saludo.**
 
-IMANGEN
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen8.png)
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen9.png)
 
 **6.Observe que el Servlet ‘SampleServlet’ acepta peticiones GET, y opcionalmente, lee el parámetro ‘name’. Ingrese la misma URL, pero ahora agregando un parámetro GET (si no sabe como hacerlo, revise la documentación en http://www.w3schools.com/tags/ref_httpmethods.asp).**
 
-IMANGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen10.png)
 
 **8.En el navegador revise la dirección https://jsonplaceholder.typicode.com/todos/1. Intente cambiando diferentes números al final del path de la url.**
 
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen11.png)
 
 **15.Intente hacer diferentes consultas desde un navegador Web para probar las diferentes funcionalidades.**
-IMAGEN
+
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen12.png)
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen13.png)
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen14.png)
 
 
 ## PARTE III
 
 **18.En la página anterior, cree un formulario que tenga un campo para ingresar un número (si no ha manejado html antes, revise http://www.w3schools.com/html/ ) y un botón. El formulario debe usar como método ‘POST’, y como acción, la ruta relativa del último servlet creado (es decir la URL pero excluyendo ‘http://localhost:8080/’).**
 
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen15.png)
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen16.png)
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen17.png)
 
 **20. Recompile y ejecute la aplicación. Abra en su navegador en la página del formulario, y rectifique que la página hecha anteriormente sea mostrada. Ingrese los datos y verifique los resultados. Cambie el formulario para que ahora en lugar de POST, use el método GET. ¿Qué diferencia observa?**
 
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen18.png)
 
 Se observa que en el método POST simplemente sale el path sin ningún tipo de variable asignada, en cambio con el método GET aparece la variable asignada
 
@@ -105,47 +116,52 @@ Escriba una aplicación web que utilice PrimeFaces para calcular la media, la mo
 
 **1.Al proyecto Maven, debe agregarle las dependencias mas recientes de javax.javaee-api, com.sun.faces.jsf-api, com.sun.faces.jsf-impl, javax.servlet.jstl y Primefaces (en el archivo pom.xml).**
 
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen19.png)
 
 **5.Cree una página XHTML, de nombre calculadora.xhtml (debe quedar en la ruta src/main/webapp). Revise en la página 13 del manual de PrimeFaces, qué espacios de nombres XML requiere una página de PrimeFaces y cuál es la estructura básica de la misma.**
-IMAGEN
+
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen20.png)
 
 **10. Si todo funcionó correctamente, realice las siguientes pruebas:**
 a.Abra la aplicación en un explorador. Realice algunas pruebas de aceptación con la aplicación.
-IMAGEN
+
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen21.png)
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen22.png)
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen23.png)
 
 b.Abra la aplicación en dos computadores diferentes. Si no dispone de uno, hágalo en dos navegadores diferentes (por ejemplo Chrome y Firefox; incluso se puede en un único 	navegador usando una ventana normal y una ventana de incógnito / privada). Haga cinco intentos en uno, y luego un intento en el otro. ¿Qué valor tiene cada uno?
 
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen24.png)
+
 No son iguales, la varianza y la desviación cambian un poco en los últimos decimales
 
 c.Aborte el proceso de Tomcat-runner haciendo Ctrl+C en la consola, y modifique el 	código del backing-bean de manera que use la anotación @SessionScoped en lugar de 	@ApplicationScoped. Reinicie la aplicación y repita el ejercicio anterior.
 
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen25.png)
 
 **•Dado la anterior, ¿Cuál es la diferencia entre los backing-beans de sesión y los de 	aplicación?**
-	Al ejecutar el de aplicación solo una instancia del bin va a existir en cambio de la de 	sesión se ejecuta una instancia por cada página. 
+	Al ejecutar el de aplicación solo una instancia del bin va a existir en cambio de la de sesión se ejecuta una instancia por cada página. 
 
 	
 d.Por medio de las herramientas de desarrollador del explorador (Usando la tecla "F12" 	en la mayoría de exploradores):
 	•Ubique el código HTML generado por el servidor.
-IMAGEN
-	•Busque el elemento oculto, que contiene el número generado aleatoriamente.
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen26.png)
+        •Busque el elemento oculto, que contiene el número generado aleatoriamente.
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen27.png)
 	•En la sección de estilos, deshabilite el estilo que oculta el elemento para que sea visible.
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen28.png)
 	•Observe el cambio en la página, cada vez que se realiza un cambio en el estilo.
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen29.png)
 	•Revise qué otros estilos se pueden agregar a los diferentes elementos y qué efecto tienen en la visualización de la página.
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen30.png)
 	•Actualice la página. Los cambios de estilos realizados desaparecen, pues se realizaron únicamente en la visualización, la respuesta del servidor sigue siendo la misma, ya que el 	contenido de los archivos allí almacenados no se ha modificado.
 
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen31.png)
 	•Revise qué otros cambios se pueden realizar y qué otra información se puede obtener 	de las herramientas de desarrollador.
 
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen32.png)
 Para facilitar los intentos del usuario, se agregará una lista de los últimos valores ingresados:
 	a.Agregue en el Backing-Bean, una propiedad que contenga una lista de valores ingresados por el usuario.
 	b.Cuando se reinicie la aplicación, limpie el contenido de la lista.
 	c.Busque cómo agregar una tabla a la página, cuyo contenido sea la lista de listas de números.
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen33.png)
