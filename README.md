@@ -11,7 +11,7 @@
 	•Revise el resultado obtenido. ¿Qué codigo de error sale?, revise el significado de este en la lista de códigos de estado HTTP.**
 	301 Movido Permanentemente:Esta y todas las solicitudes futuras deben dirigirse al URI proporcionado
 	
-![Imagen](C:\Users\Camis\Pictures\LAB05\Imagen1.jpg)
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen1.png)
 
 **•¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?**
 	1xx informational response:Indica  que la solicitud fue recibida y comprendida. Se emite de forma provisional mientras continúa el procesamiento de la solicitud. Alerta 	     al cliente para que espere una respuesta final. 
@@ -21,7 +21,7 @@
 
 **2.Ahora, solicite (GET) el recurso /html. ¿Qué se obtiene como resultado?**
 
-IMAGEN
+![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen2.png)
 
 **3.Seleccione el contenido HTML de la respuesta y copielo al cortapapeles CTRL-SHIFT-C. Ejecute el comando wc (word count) para contar palabras con la opción -c para contar el número de caracteres:wc -c 
 Pegue el contenido del portapapeles con CTRL-SHIFT-V y presione CTRL-D (fin de archivo de Linux). Si no termina el comando wc presione CTRL-D de nuevo. No presione mas de dos veces CTRL-D indica que se termino la entrada y puede cerrarle la terminal. 
