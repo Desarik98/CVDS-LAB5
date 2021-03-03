@@ -11,9 +11,9 @@
 	•Revise el resultado obtenido. ¿Qué codigo de error sale?, revise el significado de este en la lista de códigos de estado HTTP.**
 	301 Movido Permanentemente:Esta y todas las solicitudes futuras deben dirigirse al URI proporcionado
 	
-![Imagen] (C:\Users\Camis\Pictures\LAB05\Imagen1)
+![Imagen](C:\Users\Camis\Pictures\LAB05\Imagen1.jpg)
 
-	**•¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?**
+**•¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?**
 	1xx informational response:Indica  que la solicitud fue recibida y comprendida. Se emite de forma provisional mientras continúa el procesamiento de la solicitud. Alerta 	     al cliente para que espere una respuesta final. 
 	2xx success: Esta clase de códigos de estado indica que la acción solicitada por el cliente fue recibida, comprendida y aceptada
 	4xx client errors: La solicitud contiene sintaxis incorrecta o no puede procesarse.
