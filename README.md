@@ -144,22 +144,28 @@ c.Aborte el proceso de Tomcat-runner haciendo Ctrl+C en la consola, y modifique 
 
 	
 d.Por medio de las herramientas de desarrollador del explorador (Usando la tecla "F12" 	en la mayoría de exploradores):
-	•Ubique el código HTML generado por el servidor.
+
+•Ubique el código HTML generado por el servidor.
 ![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen26.png)
-        •Busque el elemento oculto, que contiene el número generado aleatoriamente.
+
+ •Busque el elemento oculto, que contiene el número generado aleatoriamente.
 ![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen27.png)
-	•En la sección de estilos, deshabilite el estilo que oculta el elemento para que sea visible.
+
+•En la sección de estilos, deshabilite el estilo que oculta el elemento para que sea visible.
 ![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen28.png)
-	•Observe el cambio en la página, cada vez que se realiza un cambio en el estilo.
+
+•Observe el cambio en la página, cada vez que se realiza un cambio en el estilo.
 ![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen29.png)
-	•Revise qué otros estilos se pueden agregar a los diferentes elementos y qué efecto tienen en la visualización de la página.
+
+•Revise qué otros estilos se pueden agregar a los diferentes elementos y qué efecto tienen en la visualización de la página.
 ![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen30.png)
-	•Actualice la página. Los cambios de estilos realizados desaparecen, pues se realizaron únicamente en la visualización, la respuesta del servidor sigue siendo la misma, ya que el 	contenido de los archivos allí almacenados no se ha modificado.
 
+•Actualice la página. Los cambios de estilos realizados desaparecen, pues se realizaron únicamente en la visualización, la respuesta del servidor sigue siendo la misma, ya que el contenido de los archivos allí almacenados no se ha modificado.
 ![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen31.png)
-	•Revise qué otros cambios se pueden realizar y qué otra información se puede obtener 	de las herramientas de desarrollador.
 
+•Revise qué otros cambios se pueden realizar y qué otra información se puede obtener 	de las herramientas de desarrollador.
 ![Imagen](https://github.com/Desarik98/CVDS-LAB5/blob/master/LAB05/Imagen32.png)
+
 Para facilitar los intentos del usuario, se agregará una lista de los últimos valores ingresados:
 	a.Agregue en el Backing-Bean, una propiedad que contenga una lista de valores ingresados por el usuario.
 	b.Cuando se reinicie la aplicación, limpie el contenido de la lista.
